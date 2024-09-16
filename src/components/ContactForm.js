@@ -55,7 +55,7 @@ const ContactForm = () => {
         setIsSubmitting(true);  // Start submission loading state
 
         try {
-            const response = await axios.post('https://react-contact-backend.onrender.com', formData);
+            const response = await axios.post('https://react-contact-backend.onrender.com');
             setSuccessMessage(response.data.message);
             setErrorMessage('');
             setErrors({});
